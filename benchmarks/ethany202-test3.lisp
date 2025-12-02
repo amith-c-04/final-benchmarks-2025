@@ -5,4 +5,4 @@
     )
 )
 
-(print (* (f (and 1 2) 6 7) (f (not (f false 7 6)) (f true 100 150) (f false 100 150))))
+(print (* (f (= 1 1) 6 7) (f (not true) (f true 100 150) (f false 100 150))))
