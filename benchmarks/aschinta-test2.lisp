@@ -1,4 +1,8 @@
-(define (sq x) (* x x))
+(define (mul x y)
+    (if (= y 0)
+        0
+        (+ x (mul x (- y 1)))))
+(define (sq x) (mul x x))
 (define (sumsq n)
   (if (= n 0)
        0
